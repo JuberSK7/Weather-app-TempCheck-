@@ -1,13 +1,130 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@500&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Lato', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    background: url(./images/bg2.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    font-family:'Lato', sans-serif; 
+}
+
+.box {
+    width: 25vw;
+    height: 60vh;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+    background: rgb(212, 243, 245);
+    position: relative;
+    overflow: hidden;
+    min-width: 20rem;
+    min-height: 25rem;
+    padding-left: 3rem;
+    padding-top: 6rem;
+}
+
+h1 {
+    padding-bottom: 44px;
+    color: #111;
+    font-size: 34px;
+    font-weight: 800;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    background: transparent;
+    text-align: center;
+    min-width: 70px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.inputData {   
+    border: none;
+    width: 10rem;
+    padding: 10px 10px;
+}
+
+.inputItem {
+    border: #111 solid 2px;
+    outline: none;
+    border-radius: 8px;
+    width: 200px;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 0 15px 15px 15px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.info {
+    padding-top: 12px;
+    padding-left: 14px;
+}
+
+.place {
+    font-size: 2rem;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    
+}
+
+.tempreture {
+    color: rgb(255, 0, 0);
+    margin-left: -88px;
+    font-size: 44px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  
+
+}
+
+.min_max {
+    margin-top: 12px;
+    margin-left: 15px;
+    letter-spacing: 2px;
+
+}
+
+
+@media (max-width:486px) {
+    h1 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .box {
+        min-width: 18rem;
+        padding-left: 2rem;
+    }
+
+    .error{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+     
+    .inputItem {
+   
+        font-size: 12px;
+        font-weight: 100;
+    }
+  
 }
