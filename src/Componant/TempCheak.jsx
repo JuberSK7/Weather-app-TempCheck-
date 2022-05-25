@@ -17,14 +17,9 @@ const TempCheak = () => {
             const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=5feab7a71a67e9dd79b85a6e0dfdfd7e`;
             const response = await fetch(url);
             const resJson = await response.json();
-
-
             setCity(resJson.main);
-
         }
-
         fetchApi();
-
     }, [search])
 
     return (
@@ -59,7 +54,6 @@ const TempCheak = () => {
                     </div>
                 )}
             </div>
-
         </>
     )
 }
